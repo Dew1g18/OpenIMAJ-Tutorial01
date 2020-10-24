@@ -71,7 +71,8 @@ public class App {
             List<Triple> pairs = new ArrayList<>();
             for( int i = 0; i < histograms.size(); i++ ) {
                 for( int j = i; j < histograms.size(); j++ ) {
-                    double distance = histograms.get(i).compare( histograms.get(j), DoubleFVComparison.EUCLIDEAN );
+//                    double distance = histograms.get(i).compare( histograms.get(j), DoubleFVComparison.EUCLIDEAN );
+                    double distance = histograms.get(i).compare( histograms.get(j), DoubleFVComparison.INTERSECTION);
                     pairs.add(new Triple(i,j,distance));
                     System.out.println("Images: "+i+" & "+j+" Scored: "+distance);
                 }
@@ -88,7 +89,7 @@ public class App {
              */
 
             /**
-             * Exercise 4.1.2
+             * Exercise 4.1.1 part 2
              * This should be really simple, I will add a statement to the nested loop which builds an array of triples,
              * storing i,j and the distance, then I will just check for the highest distance and display the 2 (non-zero)
              * images.
@@ -107,6 +108,19 @@ public class App {
             DisplayUtilities.displayName(ImageUtilities.readMBF(imageURLs[select.getI()]),String.valueOf(select.getI()));
             DisplayUtilities.displayName(ImageUtilities.readMBF(imageURLs[select.getJ()]),String.valueOf(select.getJ()));
             System.out.println("The 2 displayed images are the closest which arent actually the same, they have a distance of: "+select.getDistance());
+
+
+            /**
+             * Exercise 4.1.2
+             *
+             * To do this I have just commented out and swapped in lines where I use different comparison, using my print
+             * methos from the previous part to see the difference.#
+             *
+             * This time we got the 1st and third image, I think this is as the main bulk of the colours in the first part
+             * were similar between the first and second image, and so the euclidean distances between used colours on
+             * mass was favouring them, however as they both had gradients, there are likely few colours actually repeated
+             * between those images, hence the intersection choosing 2 and 3 as they both have a lot of black in them both.
+             */
 
 
 
