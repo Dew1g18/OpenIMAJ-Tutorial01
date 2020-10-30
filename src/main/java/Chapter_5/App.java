@@ -49,7 +49,7 @@ public class App {
             matcher.findMatches(targetKeypoints);
 
             MBFImage basicMatches = MatchingUtilities.drawMatches(query, target, matcher.getMatches(), RGBColour.RED);
-//            DisplayUtilities.display(basicMatches);
+            DisplayUtilities.displayName(basicMatches, "Basic Matcher");
 
             /**
              * We then use the MatchingUtilities to draw lines between the query and target keypoints.
@@ -69,7 +69,7 @@ public class App {
             MBFImage consistentMatches = MatchingUtilities.drawMatches(query, target, matcher.getMatches(),
                     RGBColour.RED);
 
-            DisplayUtilities.display(consistentMatches);
+//            DisplayUtilities.displayName(consistentMatches, "Basic Matcher");
 
             /**
              * getting an error when I run this:
@@ -85,9 +85,11 @@ public class App {
 
             target.drawShape(
                     query.getBounds().transform(modelFitter.getModel().getTransform().inverse()), 3,RGBColour.BLUE);
-            DisplayUtilities.display(target);
+//            DisplayUtilities.display(target);
+
 
             /**
+             *
              * then using these keypoints we draw a box around the detected object
              */
 
