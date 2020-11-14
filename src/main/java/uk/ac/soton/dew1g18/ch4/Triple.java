@@ -1,4 +1,4 @@
-package Chapter_4;
+package uk.ac.soton.dew1g18.ch4;
 
 public class Triple {
 

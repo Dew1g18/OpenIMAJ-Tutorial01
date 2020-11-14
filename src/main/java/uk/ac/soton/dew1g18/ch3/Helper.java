@@ -1,4 +1,5 @@
-package Chapter_4;
+package uk.ac.soton.dew1g18.ch3;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,5 +43,3 @@ public class Helper {
     }
 
 }
-
-

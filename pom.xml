@@ -173,7 +173,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>uk.ac.soton.dew1g18.App</mainClass>
+              <mainClass>uk.ac.soton.dew1g18.ch1.App</mainClass>
             </manifest>
           </archive>
         </configuration>

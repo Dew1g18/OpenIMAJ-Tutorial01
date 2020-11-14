@@ -1,4 +1,5 @@
-package Chapter_7;
+package uk.ac.soton.dew1g18.ch7;
+
 
 import org.openimaj.image.DisplayUtilities;
 import org.openimaj.image.MBFImage;

@@ -1,4 +1,4 @@
-package uk.ac.soton.dew1g18;
+package uk.ac.soton.dew1g18.ch1;
 
 import org.openimaj.image.DisplayUtilities;
 import org.openimaj.image.MBFImage;

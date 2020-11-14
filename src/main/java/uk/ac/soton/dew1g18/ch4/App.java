@@ -1,4 +1,5 @@
-package Chapter_4;
+package uk.ac.soton.dew1g18.ch4;
+
 
 import org.openimaj.feature.DoubleFVComparison;
 import org.openimaj.image.DisplayUtilities;

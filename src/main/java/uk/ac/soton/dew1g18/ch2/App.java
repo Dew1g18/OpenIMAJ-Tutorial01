@@ -1,4 +1,5 @@
-package chapter_2;
+package uk.ac.soton.dew1g18.ch2;
+
 
 import org.openimaj.image.DisplayUtilities;
 import org.openimaj.image.ImageUtilities;

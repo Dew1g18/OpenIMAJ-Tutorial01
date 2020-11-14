@@ -1,4 +1,5 @@
-package Chapter_5;
+package uk.ac.soton.dew1g18.ch5;
+
 
 import org.openimaj.feature.local.list.LocalFeatureList;
 import org.openimaj.feature.local.matcher.*;

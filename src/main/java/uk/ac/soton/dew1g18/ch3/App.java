@@ -1,4 +1,4 @@
-package Chapter_3;
+package uk.ac.soton.dew1g18.ch3;
 
 import org.apache.logging.log4j.core.tools.picocli.CommandLine;
 import org.openimaj.image.DisplayUtilities;

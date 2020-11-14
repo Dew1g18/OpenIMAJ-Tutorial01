@@ -1,4 +1,4 @@
-package Chapter_3;
+package uk.ac.soton.dew1g18.ch3;
 
 import net.didion.jwnl.data.Exc;
 import org.openimaj.image.DisplayUtilities;

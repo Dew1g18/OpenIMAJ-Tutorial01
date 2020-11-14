@@ -1,4 +1,5 @@
-package Chapter_6;
+package uk.ac.soton.dew1g18.ch6;
+
 
 public class Exercise2 {
 

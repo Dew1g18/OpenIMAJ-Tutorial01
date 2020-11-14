@@ -1,4 +1,4 @@
-package chapter_2;
+package uk.ac.soton.dew1g18.ch4;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,8 +6,9 @@ import java.io.InputStreamReader;
 
 public class Helper {
 
-    public String takeInput(){
+    public String takeInput(String message){
         try {
+            System.out.println(message);
             //Enter data using BufferReader
             BufferedReader reader =
                     new BufferedReader(new InputStreamReader(System.in));
@@ -24,4 +25,22 @@ public class Helper {
         }
     }
 
+    public Float[] arrayPrimToObj(float[] arr){
+        Float[] yaBoy = new Float[arr.length];
+        for(int i=0;i<arr.length;i++){
+            yaBoy[i]=arr[i];
+        }
+        return yaBoy;
+    }
+
+    public float[] arrayObjToPrim(Float[] arr){
+        float[] yaBoy = new float[arr.length];
+        for(int i=0;i<arr.length;i++){
+            yaBoy[i]=arr[i];
+        }
+        return yaBoy;
+    }
+
 }
+
+
