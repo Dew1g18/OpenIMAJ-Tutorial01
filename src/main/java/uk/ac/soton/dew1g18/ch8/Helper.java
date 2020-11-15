@@ -1,4 +1,4 @@
-package uk.ac.soton.dew1g18.ch4;
+package uk.ac.soton.dew1g18.ch8;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -43,6 +43,10 @@ public class Helper {
 
     public float floatFromDouble(double dub){
         return new Double(dub).floatValue();
+    }
+
+    public int intFromDouble(double dub){
+        return new Double(dub).intValue();
     }
 
 }
